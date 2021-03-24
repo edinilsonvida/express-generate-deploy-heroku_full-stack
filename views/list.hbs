@@ -1,0 +1,25 @@
+<div class="card">
+    <h5 class="card-header">{{title}}</h5>
+    <div class="card-body">
+        <a href="/form" class="btn btn-success">Adicionar</a>
+        <br><br>
+        {{#each posts}}
+        <div class="card">
+            <div class="card-body">
+                <h5>{{dataValues.name}}</h5>
+                <hr>
+                <p>Telefone: {{dataValues.phone}}</p>
+                <p>Data de Nascimento: {{dataValues.dateBirthday}}</p>
+                <p>Gênero: {{dataValues.gender}}</p>
+                <p>E-mail: {{dataValues.email}}</p>
+                <a href="/delete/{{dataValues.id}}" class="btn btn-danger"
+                    onclick="return confirm('Confirma a exclusão do registro?')">Excluir</a>
+                <a href="/edit/{{dataValues.id}}" class="btn btn-primary">Editar</a>
+            </div>
+        </div>
+        <br>
+        {{else}}
+        <p>Nenhuma registro encontro!</p>
+    </div>
+    {{/each}}
+</div>

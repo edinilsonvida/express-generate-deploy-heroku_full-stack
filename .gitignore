@@ -1,0 +1,6 @@
+# Diretórios de dependências
+node_modules
+
+# Arquivo de variáveis ​​de ambiente dotenv
+.env
+

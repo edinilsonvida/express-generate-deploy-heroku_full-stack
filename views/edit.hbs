@@ -1,0 +1,36 @@
+<div class="card">
+    <h5 class="card-header">{{title}}</h5>
+    <div class="card-body">
+        <h5 class="card-title">Dados da Inscrição</h5>
+
+        <form action="/edition/{{id}}" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome:</label>
+                <input type="text" class="form-control" name="name" value={{name}}>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Telefone:</label>
+                <input type="phone" class="form-control" name="phone" value="{{phone}}">
+            </div>
+
+            <div class="mb-3">
+                <label for="dateBirthday" class="form-label">Data de Nascimento:</label>
+                <input type="date" class="form-control" name="dateBirthday" value="{{dateBirthday}}">
+            </div>
+
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gênero:</label>
+                <input type="text" class="form-control" name="gender" value="{{gender}}">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" name="email" value="{{email}}">
+            </div>
+<a href="/list" class="btn btn-primary">Cancelar</a>
+            <button type="submit" class="btn btn-success">Salvar</button>
+        </form>
+
+    </div>
+</div>

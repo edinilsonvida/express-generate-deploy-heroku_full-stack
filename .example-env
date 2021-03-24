@@ -1,0 +1,6 @@
+#Exemplo: mysql://<user>:<password>@<host>/<database>?reconnect=true
+DB_USER=<user>
+DB_PASSWORD=<password>
+DB_HOST=<host>
+DB=<database>
+PORT=3000
